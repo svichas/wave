@@ -7,13 +7,41 @@
 
     <style>
         body {
+            background: #2ECC40;
+            padding-top:100px;
             margin: 0;
+        }
+        .wavecanvas_wrap {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .wavecanvas_txt {
+            width: 100px;
+            position: absolute;
+            top: 0;
         }
     </style>
 </head>
 <body>
 
-    <canvas class="wavecanvas"></canvas>
+    <div class="wavecanvas_wrap">
+        <canvas class="wavecanvas"></canvas>
+
+        <div class="wavecanvas_txt">
+            awesome text
+        </div>
+
+        <div class="wavecanvas_txt">
+            awesome text 2
+        </div>
+
+        <div class="wavecanvas_txt">
+            awesome text 3
+        </div>
+
+    </div>
 
     <script src="wave.js"></script>
     
